@@ -50,24 +50,24 @@ const Home = () => {
             </section>
 
             {/* Tour Packages Section */}
-            <section className="w-full px-36 min-h-screen bg-white py-16">
+            <section className="w-full lg:px-24 xl:px-36 2xl:px-48 min-h-screen bg-white py-16">
                 {/* Header */}
                 <div className="flex justify-between items-start mb-12">
                     <div>
                         <p className="text-base text-gray-500 mb-10" style={{fontFamily: "'Afacad', sans-serif"}}>Tour Packages</p>
-                        <h2 className="text-5xl font-bold text-gray-900 font-pethra" style={{fontWeight: 100}}>Explore Our Best<br/>Travel Packages</h2>
+                        <h2 className="lg:text-5xl xl:text-6xl font-bold text-gray-900 font-pethra" style={{fontWeight: 100}}>Explore Our Best<br/>Travel Packages</h2>
                         <div className="w-24 h-1 bg-blue-600 mt-2 mx-auto"></div>
                     </div>
                     <p className="text-gray-600 text-lg max-w-xs text-right" style={{fontFamily: "'Afacad', sans-serif"}}>Handpicked holiday experiences<br/>designed for comfort, adventure,<br/>and unforgettable memories.</p>
                 </div>
 
                 {/* Cards Container */}
-                <div className="flex justify-center items-center gap-8">
-                    <div className="flex gap-8">
+                <div className="flex flex-col lg:flex-row lg:justify-center items-center gap-4 lg:gap-6 xl:gap-8">
+                    <div className="flex gap-4 lg:gap-6 xl:gap-8">
                         {/* Kerala Card */}
-                        <div className={`bg-white rounded-2xl shadow-2xl overflow-hidden transition-all duration-300 ${hoveredCard === 0 || hoveredCard === null ? 'w-[32rem]' : 'w-72'}`} onMouseEnter={() => setHoveredCard(0)}>
+                        <div className={`bg-white rounded-2xl shadow-2xl overflow-hidden transition-all duration-300 ${hoveredCard === 0 || hoveredCard === null ? 'md:w-[20rem] lg:w-[22rem] xl:w-[24rem] 2xl:w-[26rem]' : 'w-48 md:w-56 lg:w-64 xl:w-72'}`} onMouseEnter={() => setHoveredCard(0)}>
                             <div className="relative">
-                                <img src="/kerala.jpg" alt="Kerala" className={`object-cover rounded-2xl m-4 w-[calc(100%-2rem)] ${hoveredCard === 0 || hoveredCard === null ? 'h-96' : 'h-[32rem]'}`}/>
+                                <img src="/kerala.jpg" alt="Kerala" className={`object-cover rounded-2xl m-4 w-[calc(100%-2rem)] ${hoveredCard === 0 || hoveredCard === null ? 'h-72 md:h-80 lg:h-96' : 'h-[24rem] md:h-[28rem] lg:h-[32rem]'}`}/>
                                 <div className="absolute top-8 left-8 bg-gray-800 bg-opacity-70 text-white px-3 py-1 rounded-full text-sm flex items-center gap-1">
                                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"/></svg>
                                     South Asia
@@ -92,9 +92,9 @@ const Home = () => {
                         </div>
 
                         {/* Maldives Card */}
-                        <div className={`bg-white rounded-2xl shadow-2xl overflow-hidden transition-all duration-300 ${hoveredCard === 1 ? 'w-[32rem]' : 'w-72'}`} onMouseEnter={() => setHoveredCard(1)}>
+                        <div className={`bg-white rounded-2xl shadow-2xl overflow-hidden transition-all duration-300 ${hoveredCard === 1 ? 'md:w-[20rem] lg:w-[22rem] xl:w-[24rem] 2xl:w-[26rem]' : 'w-48 md:w-56 lg:w-64 xl:w-72'}`} onMouseEnter={() => setHoveredCard(1)}>
                             <div className="relative">
-                                <img src="/maldives.jpg" alt="Maldives" className={`object-cover rounded-2xl m-4 w-[calc(100%-2rem)] ${hoveredCard === 1 ? 'h-96' : 'h-[32rem]'}`}/>
+                                <img src="/maldives.jpg" alt="Maldives" className={`object-cover rounded-2xl m-4 w-[calc(100%-2rem)] ${hoveredCard === 1 ? 'h-72 md:h-80 lg:h-96' : 'h-[24rem] md:h-[28rem] lg:h-[32rem]'}`}/>
                                 <div className="absolute top-8 left-8 bg-gray-800 bg-opacity-70 text-white px-3 py-1 rounded-full text-sm flex items-center gap-1">
                                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"/></svg>
                                     Indian Ocean
@@ -119,9 +119,9 @@ const Home = () => {
                         </div>
 
                         {/* Europe Card */}
-                        <div className={`bg-white rounded-2xl shadow-2xl overflow-hidden transition-all duration-300 ${hoveredCard === 2 ? 'w-[32rem]' : 'w-72'}`} onMouseEnter={() => setHoveredCard(2)}>
+                        <div className={`bg-white rounded-2xl shadow-2xl overflow-hidden transition-all duration-300 ${hoveredCard === 2 ? 'md:w-[20rem] lg:w-[22rem] xl:w-[24rem] 2xl:w-[26rem]' : 'w-48 md:w-56 lg:w-64 xl:w-72'}`} onMouseEnter={() => setHoveredCard(2)}>
                             <div className="relative">
-                                <img src="/europe.jpg" alt="Europe" className={`object-cover rounded-2xl m-4 w-[calc(100%-2rem)] ${hoveredCard === 2 ? 'h-96' : 'h-[32rem]'}`}/>
+                                <img src="/europe.jpg" alt="Europe" className={`object-cover rounded-2xl m-4 w-[calc(100%-2rem)] ${hoveredCard === 2 ? 'h-72 md:h-80 lg:h-96' : 'h-[24rem] md:h-[28rem] lg:h-[32rem]'}`}/>
                                 <div className="absolute top-8 left-8 bg-gray-800 bg-opacity-70 text-white px-3 py-1 rounded-full text-sm flex items-center gap-1">
                                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"/></svg>
                                     Europe
@@ -146,9 +146,9 @@ const Home = () => {
                         </div>
 
                         {/* Thailand Card */}
-                        <div className={`bg-white rounded-2xl shadow-2xl overflow-hidden transition-all duration-300 ${hoveredCard === 3 ? 'w-[32rem]' : 'w-72'}`} onMouseEnter={() => setHoveredCard(3)}>
+                        <div className={`bg-white rounded-2xl shadow-2xl overflow-hidden transition-all duration-300 ${hoveredCard === 3 ? 'md:w-[20rem] lg:w-[22rem] xl:w-[24rem] 2xl:w-[26rem]' : 'w-48 md:w-56 lg:w-64 xl:w-72'}`} onMouseEnter={() => setHoveredCard(3)}>
                             <div className="relative">
-                                <img src="/thailand.jpg" alt="Thailand" className={`object-cover rounded-2xl m-4 w-[calc(100%-2rem)] ${hoveredCard === 3 ? 'h-96' : 'h-[32rem]'}`}/>
+                                <img src="/thailand.jpg" alt="Thailand" className={`object-cover rounded-2xl m-4 w-[calc(100%-2rem)] ${hoveredCard === 3 ? 'h-72 md:h-80 lg:h-96' : 'h-[24rem] md:h-[28rem] lg:h-[32rem]'}`}/>
                                 <div className="absolute top-8 left-8 bg-gray-800 bg-opacity-70 text-white px-3 py-1 rounded-full text-sm flex items-center gap-1">
                                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"/></svg>
                                     Southeast Asia
@@ -174,8 +174,93 @@ const Home = () => {
                     </div>
 
                     {/* Next Navigation Box */}
-                    <div className="bg-white rounded-2xl shadow-2xl overflow-hidden w-32 h-96 flex items-center justify-center">
-                        <button className="text-gray-600 hover:text-blue-600 text-4xl transition-all">&gt;</button>
+                    <div className="bg-white rounded-2xl shadow-2xl overflow-hidden w-24 md:w-32 lg:w-36 h-72 md:h-80 lg:h-96 flex items-center justify-center">
+                        <button className="text-gray-600 hover:text-blue-600 text-2xl md:text-3xl lg:text-4xl transition-all">&gt;</button>
+                    </div>
+                </div>
+            </section>
+
+            {/* Service Cards Section */}
+            <section className="py-20 bg-gray-50">
+                <div className="container mx-auto px-4">
+                    <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12">
+                        {/* Left Section - Travel Made Effortless Box */}
+                        <div className="lg:w-1/2">
+                            <div className="bg-white rounded-3xl shadow-xl p-12 mb-8 lg:mb-8">
+                                <h2 className="text-4xl font-bold text-gray-800 font-pethra text-center lg:text-left mb-6">Travel Made Effortless</h2>
+                                <p className="text-lg text-gray-600 text-center lg:text-left" style={{fontFamily: "'Afacad', sans-serif"}}>
+                                    From ticket bookings to luxury transfers, we handle every detail so you can focus on enjoying your journey.
+                                </p>
+                            </div>
+                            
+                            {/* Images and All Services Button */}
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                                <div className="bg-white rounded-3xl shadow-lg overflow-hidden">
+                                    <img src="/service1.jpg" alt="Scenic Road" className="w-full h-94 object-cover" />
+                                </div>
+                                <div className="bg-white rounded-3xl shadow-lg overflow-hidden">
+                                    <img src="/service2.jpg" alt="Airplane Wing" className="w-full h-94 object-cover" />
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Right Section - Service Cards */}
+                        <div className="lg:w-1/2">
+                            <h3 className="text-6xl font-bold text-gray-800 mb-8 font-pethra">Service Cards</h3>
+                            <div className="w-24 h-1 bg-blue-600 mt-2 left-1/4 relative "></div>
+                            
+                            <div className="space-y-6 mt-16">
+                                {/* Service Card 1 */}
+                                <div className="bg-white rounded-2xl shadow-md p-6 flex items-center space-x-4">
+                                    <div className="bg-blue-100 text-blue-600 rounded-full p-3">
+                                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                    </div>
+                                    <div>
+                                        <h4 className="text-xl font-semibold text-gray-800 mb-2">Flight Booking</h4>
+                                        <p className="text-gray-600">Affordable flights with flexible options.</p>
+                                    </div>
+                                </div>
+
+                                {/* Service Card 2 */}
+                                <div className="bg-white rounded-2xl shadow-md p-6 flex items-center space-x-4">
+                                    <div className="bg-green-100 text-green-600 rounded-full p-3">
+                                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                    </div>
+                                    <div>
+                                        <h4 className="text-xl font-semibold text-gray-800 mb-2">Rail & Bus Tickets</h4>
+                                        <p className="text-gray-600">Smooth domestic travel arrangements.</p>
+                                    </div>
+                                </div>
+
+                                {/* Service Card 3 */}
+                                <div className="bg-white rounded-2xl shadow-md p-6 flex items-center space-x-4">
+                                    <div className="bg-purple-100 text-purple-600 rounded-full p-3">
+                                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7h8m0 0v8m0-8l-8 8m8-8l8 8"/></svg>
+                                    </div>
+                                    <div>
+                                        <h4 className="text-xl font-semibold text-gray-800 mb-2">Premium Transfers</h4>
+                                        <p className="text-gray-600">Comfortable taxi and private transport.</p>
+                                    </div>
+                                </div>
+
+                                {/* Service Card 4 */}
+                                <div className="bg-white rounded-2xl shadow-md p-6 flex items-center space-x-4">
+                                    <div className="bg-orange-100 text-orange-600 rounded-full p-3">
+                                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                                    </div>
+                                    <div>
+                                        <h4 className="text-xl font-semibold text-gray-800 mb-2">Hotel Reservations</h4>
+                                        <p className="text-gray-600">Trusted stays at top destinations.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button className="bg-blue-600 text-white px-10 py-4 rounded-full text-lg hover:bg-blue-700 transition-all duration-300 w-full lg:w-auto mt-12" style={{fontFamily: "'Afacad', sans-serif"}}>
+                            All Services....
+                        </button>
+                        </div>
+                        
+                        
                     </div>
                 </div>
             </section>
