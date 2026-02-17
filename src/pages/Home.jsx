@@ -55,7 +55,7 @@ const Home = () => {
                 <div className="flex justify-between items-start mb-12">
                     <div>
                         <p className="text-base text-gray-500 mb-10" style={{fontFamily: "'Afacad', sans-serif"}}>Tour Packages</p>
-                        <h2 className="lg:text-5xl xl:text-6xl font-bold text-gray-900 font-pethra" style={{fontWeight: 100}}>Explore Our Best<br/>Travel Packages</h2>
+                        <h2 className="lg:text-5xl xl:text-6xl font-bold text-black font-pethra" style={{fontWeight: 100}}>Explore Our Best<br/>Travel Packages</h2>
                         <div className="w-24 h-1 bg-blue-600 mt-2 mx-auto"></div>
                     </div>
                     <p className="text-gray-600 text-lg max-w-xs text-right" style={{fontFamily: "'Afacad', sans-serif"}}>Handpicked holiday experiences<br/>designed for comfort, adventure,<br/>and unforgettable memories.</p>
@@ -180,6 +180,9 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* Separator */}
+            <div className="w-full max-w-4xl h-0.5 bg-black mx-auto"></div>
+
             {/* Service Cards Section */}
             <section className="py-20 bg-gray-50">
                 <div className="container mx-auto px-4">
@@ -198,16 +201,23 @@ const Home = () => {
                                 <div className="bg-white rounded-3xl shadow-lg overflow-hidden">
                                     <img src="/service1.jpg" alt="Scenic Road" className="w-full h-94 object-cover" />
                                 </div>
-                                <div className="bg-white rounded-3xl shadow-lg overflow-hidden">
+                                <div className="bg-white rounded-3xl shadow-lg overflow-hidden relative">
                                     <img src="/service2.jpg" alt="Airplane Wing" className="w-full h-94 object-cover" />
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <div className="bg-white rounded-full p-4 shadow-lg">
+                                            <svg className="w-8 h-8 text-black transform rotate-[315deg]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M12 5l7 7-7 7"/>
+                                            </svg>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         {/* Right Section - Service Cards */}
                         <div className="lg:w-1/2">
-                            <h3 className="text-6xl font-bold text-gray-800 mb-8 font-pethra">Service Cards</h3>
-                            <div className="w-24 h-1 bg-blue-600 mt-2 left-1/4 relative "></div>
+                            <h3 className="text-6xl font-bold text-black mb-8 font-pethra">Service Cards</h3>
+                            <div className="w-44 h-1 bg-blue-600 mt-2 relative "></div>
                             
                             <div className="space-y-6 mt-16">
                                 {/* Service Card 1 */}
@@ -261,6 +271,103 @@ const Home = () => {
                         </div>
                         
                         
+                    </div>
+                </div>
+            </section>
+
+            {/* Separator */}
+            <div className="w-full max-w-4xl h-0.5 bg-black mx-auto"></div>
+
+            {/* Customization Section */}
+            <section className="py-20 bg-white">
+                <div className="container mx-auto px-4">
+                    <div className="flex flex-col lg:flex-row items-center gap-12">
+                        {/* Left Section - Content */}
+                        <div className="lg:w-1/2">
+                            <p className="text-lg text-gray-500 mb-6" style={{fontFamily: "'Afacad', sans-serif"}}>Highlight</p>
+                            <h2 className="text-7xl font-normal text-black mb-3 font-pethra">Every Journey, Perfectly Planned</h2>
+                            <div className="w-64 h-1 bg-blue-600 mt-2 mb-12"></div>
+                            <p className="text-xl text-gray-600 mb-8" style={{fontFamily: "'Afacad', sans-serif"}}>
+                                Whether it's a relaxing vacation or an adventurous getaway, we craft travel experiences tailored to you.
+                            </p>
+                            <div className="space-y-4 mb-8">
+                                <div className="flex items-center space-x-3">
+                                    <div className="bg-blue-100 text-blue-600 rounded-full p-2">
+                                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                    </div>
+                                    <p className="text-gray-700">Personalized travel planning</p>
+                                </div>
+                                <div className="flex items-center space-x-3">
+                                    <div className="bg-blue-100 text-blue-600 rounded-full p-2">
+                                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                    </div>
+                                    <p className="text-gray-700">Flexible booking options</p>
+                                </div>
+                                <div className="flex items-center space-x-3">
+                                    <div className="bg-blue-100 text-blue-600 rounded-full p-2">
+                                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                    </div>
+                                    <p className="text-gray-700">Expert travel consultation</p>
+                                </div>
+                            </div>
+                            <button className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg hover:bg-blue-700 transition-all duration-300" style={{fontFamily: "'Afacad', sans-serif"}}>
+                                Customize My Trip
+                            </button>
+                        </div>
+
+                        {/* Right Section - Image */}
+                        <div className="lg:w-1/2">
+                            <div className="bg-white rounded-3xl shadow-lg overflow-hidden">
+                                <img src="/customize.jpg" alt="Customization" className="w-full h-[32rem] object-cover" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Separator */}
+            <div className="w-full max-w-4xl h-0.5 bg-black mx-auto"></div>
+
+            {/* Adventure Section */}
+            <section className="py-20 bg-white">
+                <div className="container mx-auto px-4">
+                    <div className="flex justify-center">
+                        {/* Right Section - Content */}
+                        <div className="lg:w-3/4 text-center">
+                            <h2 className="text-6xl font-bold text-black mb-3 font-pethra">Ready for Your Next Adventure?</h2>
+                            <div className="w-44 h-1 bg-blue-600 mt-2 mb-8 mx-auto"></div>
+                            <p className="text-xl text-gray-600 mb-12" style={{fontFamily: "'Afacad', sans-serif"}}>
+                                Let our travel experts design your perfect holiday today.
+                            </p>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                                {/* Left Contact Box */}
+                                <div className="bg-gray-50 rounded-2xl p-6 text-center">
+                                    <h3 className="text-2xl font-semibold text-gray-800 mb-4 font-pethra">Contact Us</h3>
+                                    <p className="text-gray-600 mb-4" style={{fontFamily: "'Afacad', sans-serif"}}>
+                                        Get expert advice for your next journey
+                                    </p>
+                                    <button className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all duration-300" style={{fontFamily: "'Afacad', sans-serif"}}>
+                                       Click to Contact Us
+                                    </button>
+                                </div>
+                                {/* Right Contact Box */}
+                                <div className="bg-gray-50 rounded-2xl p-6 text-center">
+                                    <h3 className="text-3xl font-semibold text-gray-800 mb-4 font-pethra">Customise Trips and Claer the Doubts</h3>
+                                    <p className="text-gray-600 mb-4" style={{fontFamily: "'Afacad', sans-serif"}}>
+                                        Start planning your dream vacation
+                                    </p>
+                                    <button className="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-all duration-300" style={{fontFamily: "'Afacad', sans-serif"}}>
+                                        Get Free Consultation
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
