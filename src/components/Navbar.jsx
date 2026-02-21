@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -13,15 +14,15 @@ const Navbar = () => {
           {/* Center - Navigation Links in glassmorphism box */}
           <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-full px-12 py-3">
             <div className="hidden md:flex items-center space-x-24">
-              <a href="#" className="text-lg text-black hover:text-blue-600 transition-colors duration-300 font-medium" style={{fontFamily: "'Afacad', sans-serif"}}>
+              <Link to="/" className="text-lg text-black hover:text-blue-600 transition-colors duration-300 font-medium" style={{fontFamily: "'Afacad', sans-serif"}}>
                 Home
-              </a>
+              </Link>
               <a href="#" className="text-lg text-black hover:text-blue-600 transition-colors duration-300 font-medium" style={{fontFamily: "'Afacad', sans-serif"}}>
                 Services
               </a>
-              <a href="#" className="text-lg text-black hover:text-blue-600 transition-colors duration-300 font-medium" style={{fontFamily: "'Afacad', sans-serif"}}>
+              <Link to="/about" className="text-lg text-black hover:text-blue-600 transition-colors duration-300 font-medium" style={{fontFamily: "'Afacad', sans-serif"}}>
                 About Us
-              </a>
+              </Link>
               <a href="#" className="text-lg text-black hover:text-blue-600 transition-colors duration-300 font-medium" style={{fontFamily: "'Afacad', sans-serif"}}>
                 Contact Us
               </a>
